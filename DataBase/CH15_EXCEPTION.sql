@@ -134,9 +134,3 @@ end $$
 delimiter ;
 
 call tbl_std_proc_tx();
-
-
-
-
-
- 

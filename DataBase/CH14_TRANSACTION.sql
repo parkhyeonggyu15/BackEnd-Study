@@ -50,9 +50,9 @@ begin
     end;
     start transaction;
 		savepoint sp;
-		insert into tbl_test values(7,'aa',66,'W');
-		insert into tbl_test values(7,'ab',66,'W');
-		insert into tbl_test values(8,'ac',66,'W');    
+		insert into tbl_test values(4,'aa',66,'W');
+		insert into tbl_test values(5,'ab',66,'W');
+		insert into tbl_test values(5,'ac',66,'W');    
 	commit;
     release savepoint sp;
 end $$
@@ -61,5 +61,6 @@ DELIMITER ;
 call TX_Test();
 show procedure status;
 select * from tbl_test;
+
  
  
